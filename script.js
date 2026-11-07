@@ -252,7 +252,7 @@ const projects = [
         description: "A Java EE web application designed to support tuck shop management.",
         technologies: ["Java", "JSP", "Servlets", "EJB", "JPA", "PostgreSQL"],
         details: "Developed a web-based management system with user authentication, roles, product and category management, sales processing, stock management and reports.",
-        image: "images/spazahub.png"
+        image: "images/spazahub.jpeg"
     },
     {
         name: "TuckShopApp", category: "Java Development",
