@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parsons Radingoanis — Computer Science student and technology enthusiast.">
+    <title>Parsons Radingoanis — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="app-shell">
+        <!-- VS Code-style activity bar -->
+        <aside class="activity-bar" aria-label="Main activity bar">
+            <button class="activity-button active" data-panel="explorer" aria-label="Explorer" title="Explorer">▤</button>
+            <div class="activity-spacer"></div>
+            <button class="activity-button" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">☼</button>
+        </aside>
+
+        <!-- Explorer sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-heading">
+                <span>EXPLORER</span>
+                <button id="sidebar-close" class="icon-button mobile-only" aria-label="Close explorer">×</button>
+            </div>
+            <div class="workspace-name"><span class="chevron">⌄</span> PARSONS-PORTFOLIO</div>
+            <nav class="file-tree" aria-label="Portfolio sections">
+                <button class="file-item active" data-section="home"><span class="file-icon html">▤</span> index.html</button>
+                <button class="file-item" data-section="about"><span class="file-icon html">▤</span> about.html</button>
+                <button class="file-item" data-section="education"><span class="file-icon html">▤</span> education.html</button>
+                <button class="file-item" data-section="skills"><span class="file-icon json">{ }</span> skills.json</button>
+                <div class="folder-row"><span class="chevron">⌄</span><span class="folder-icon">▰</span> projects</div>
+                <button class="file-item nested" data-section="projects"><span class="file-icon html">▤</span> index.html</button>
+                <button class="file-item" data-section="reports"><span class="file-icon md">M↓</span> reports.md</button>
+                <button class="file-item" data-section="experience"><span class="file-icon html">▤</span> experience.html</button>
+                <button class="file-item" data-section="journey"><span class="file-icon md">M↓</span> journey.md</button>
+                <button class="file-item" data-section="contact"><span class="file-icon html">▤</span> contact.html</button>
+            </nav>
+            <div class="sidebar-bottom">
+                <div class="sidebar-heading">OUTLINE</div>
+                <p class="outline-note">Choose a file above to explore the portfolio.</p>
+            </div>
+        </aside>
+
+        <main class="main-area">
+            <header class="topbar">
+                <button id="mobile-explorer" class="icon-button mobile-only" aria-label="Open explorer">☰</button>
+                <div class="breadcrumbs"><span>portfolio</span><span class="crumb-separator">›</span><strong id="breadcrumb-file">index.html</strong></div>
+                <div class="topbar-actions">
+                    <button id="command-open" class="command-trigger" aria-label="Open command palette"><span>⌕</span> Search files and commands... <kbd>Ctrl K</kbd></button>
+                </div>
+            </header>
+
+            <div class="editor-tabs" role="tablist" aria-label="Open portfolio files">
+                <button class="editor-tab active" data-section="home"><span class="file-icon html">▤</span> index.html <span class="tab-close">×</span></button>
+                <div class="tab-spacer"></div>
+                <span class="editor-title">PARSONS PORTFOLIO</span>
+            </div>
+
+            <div class="editor-content">
+                <section id="home" class="page-section active-section">
+                    <div class="section-kicker"><span class="syntax-purple">const</span> <span class="syntax-blue">welcome</span> <span class="syntax-muted">=</span> <span class="syntax-green">"Hello, World!"</span><span class="syntax-muted">;</span></div>
+                    <div class="hero-layout">
+                        <div class="hero-copy">
+                            <p class="eyebrow">HELLO, WORLD! I'M</p>
+                            <h1>Parsons <span>Radingoanis</span></h1>
+                            <h2>Final-Year Computer Science Student</h2>
+                            <p class="hero-description">Technology Enthusiast exploring cybersecurity, software development, backend systems, Linux and more.</p>
+                            <p class="hero-support">I enjoy problem-solving, analysing technical challenges and building practical solutions through Computer Science. Always learning and discovering new possibilities.</p>
+                            <div class="availability"><span class="status-dot"></span> Currently seeking Internship / Work Integrated Learning (WIL)</div>
+                            <div class="hero-actions">
+                                <a class="primary-button" href="#projects" data-go="projects">Explore Projects <span>↗</span></a>
+                                <a class="secondary-button" href="#about" data-go="about">About Me</a>
+                            </div>
+                        </div>
+                        <div class="code-window">
+                            <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>profile.js</span><span class="window-menu">•••</span></div>
+                            <div class="code-body">
+                                <div><span class="line-no">1</span><span class="syntax-purple">const</span> <span class="syntax-blue">developer</span> <span class="syntax-muted">=</span> <span class="syntax-yellow">{</span></div>
+                                <div><span class="line-no">2</span>&nbsp;&nbsp;name: <span class="syntax-green">"Parsons Radingoanis"</span>,</div>
+                                <div><span class="line-no">3</span>&nbsp;&nbsp;field: <span class="syntax-green">"Computer Science"</span>,</div>
+                                <div><span class="line-no">4</span>&nbsp;&nbsp;interests: <span class="syntax-yellow">[</span></div>
+                                <div><span class="line-no">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-green">"Cybersecurity"</span>,</div>
+                                <div><span class="line-no">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-green">"Software Development"</span>,</div>
+                                <div><span class="line-no">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-green">"Linux"</span></div>
+                                <div><span class="line-no">8</span>&nbsp;&nbsp;<span class="syntax-yellow">]</span>,</div>
+                                <div><span class="line-no">9</span>&nbsp;&nbsp;mindset: <span class="syntax-green">"Always learning"</span></div>
+                                <div><span class="line-no">10</span><span class="syntax-yellow">}</span><span class="syntax-muted">;</span></div>
+                                <div class="code-comment"><span class="line-no">11</span>// Building knowledge, one project at a time.<span class="typing-cursor"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-stats">
+                        <div><strong>01</strong><span>Computer Science</span></div>
+                        <div><strong>08+</strong><span>Technical skills</span></div>
+                        <div><strong>03</strong><span>Featured projects</span></div>
+                    </div>
+                </section>
+
+                <section id="about" class="page-section">
+                    <div class="section-heading"><span class="heading-icon">▤</span><div><p class="section-path">portfolio / about.html</p><h2>About Me</h2></div></div>
+                    <div id="about-content"></div>
+                </section>
+                <section id="education" class="page-section">
+                    <div class="section-heading"><span class="heading-icon">▤</span><div><p class="section-path">portfolio / education.html</p><h2>Education</h2></div></div>
+                    <div id="education-content"></div>
+                </section>
+                <section id="skills" class="page-section">
+                    <div class="section-heading"><span class="heading-icon json">{ }</span><div><p class="section-path">portfolio / skills.json</p><h2>Technical Skills</h2></div></div>
+                    <p class="section-intro">A collection of technologies and tools I have studied and practised.</p>
+                    <div id="skill-filters" class="filter-container"></div>
+                    <div id="skills-content"></div>
+                </section>
+                <section id="projects" class="page-section">
+                    <div class="section-heading"><span class="heading-icon">▰</span><div><p class="section-path">portfolio / projects / index.html</p><h2>Projects & Practical Work</h2></div></div>
+                    <p class="section-intro">Selected academic and personal work demonstrating my practical learning.</p>
+                    <div id="project-filters" class="filter-container"></div>
+                    <div id="projects-content" class="project-grid"></div>
+                </section>
+                <section id="reports" class="page-section">
+                    <div class="section-heading"><span class="heading-icon md">M↓</span><div><p class="section-path">portfolio / reports.md</p><h2>Reports & Documentation</h2></div></div>
+                    <div id="reports-content"></div>
+                </section>
+                <section id="experience" class="page-section">
+                    <div class="section-heading"><span class="heading-icon">▤</span><div><p class="section-path">portfolio / experience.html</p><h2>Experience</h2></div></div>
+                    <div id="experience-content"></div>
+                </section>
+                <section id="journey" class="page-section">
+                    <div class="section-heading"><span class="heading-icon md">M↓</span><div><p class="section-path">portfolio / journey.md</p><h2>My Learning Journey</h2></div></div>
+                    <div id="journey-content"></div>
+                </section>
+                <section id="contact" class="page-section">
+                    <div class="section-heading"><span class="heading-icon">▤</span><div><p class="section-path">portfolio / contact.html</p><h2>Let's Connect</h2></div></div>
+                    <p class="section-intro">Find me through the platforms below.</p>
+                    <div id="contact-content"></div>
+                </section>
+            </div>
+
+            <!-- Integrated terminal -->
+            <section class="terminal-panel" aria-label="Terminal panel">
+                <div class="terminal-tabs"><span class="terminal-tab active">TERMINAL</span><span>OUTPUT</span><span>PROBLEMS</span><button id="terminal-toggle" aria-label="Collapse terminal">⌄</button></div>
+                <div class="terminal-output"><p><span class="terminal-prompt">parsons@portfolio</span>:<span class="terminal-path">~</span>$ <span id="terminal-message">Welcome! Select a file from the Explorer to navigate.</span></p><p><span class="terminal-prompt">parsons@portfolio</span>:<span class="terminal-path">~</span>$ <span class="terminal-cursor"></span></p></div>
+            </section>
+
+            <footer class="statusbar"><span>⎇ main</span><span>Portfolio Workspace</span><span class="status-spacer"></span><span>HTML</span><span>UTF-8</span><span>© 2026 Parsons Radingoanis</span></footer>
+        </main>
+    </div>
+
+    <div id="command-palette" class="command-palette" aria-hidden="true">
+        <div class="command-box">
+            <input type="text" id="command-input" placeholder="Type a section name..." aria-label="Search portfolio sections">
+            <div id="command-results"></div>
+        </div>
+    </div>
+    <div id="image-preview" class="image-preview">
+        <button id="close-preview" aria-label="Close image preview">×</button>
+        <img id="preview-image" src="" alt="Project preview">
+    </div>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
