@@ -299,7 +299,7 @@ const projects = [
         image: "images/linux-project.png"
     }*/
 ];
-const projectCategories = ["All", "Java Development", "Linux"];
+const projectCategories = ["All", "Java Development", "Web Development", "Linux"];
 
 function displayProjects(category) {
     projectsContent.innerHTML = "";
