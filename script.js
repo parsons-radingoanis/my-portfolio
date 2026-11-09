@@ -160,28 +160,40 @@ imagePreview.addEventListener("click", function (event) {
 // ABOUT CONTENT
 document.getElementById("about-content").innerHTML = `
     <div class="content-card">
-        <h3 class="card-title">Who I Am</h3>
+        
         <p class="card-description">
-            I am a final-year Diploma in Computer Science student at Tshwane University of Technology.
-            I have a strong interest in technology and enjoy exploring how different systems and applications work.
+            Final-year Diploma in Computer Science student at Tshwane University of Technology with a 
+            strong interest in technology and exploring different areas of the industry, including software 
+            development, backend development, application development, cybersecurity and Linux.
         </p><br>
         <p class="card-description">
-            I enjoy problem-solving, writing code, analysing technical challenges and developing practical solutions.
-            My interests include software development, cybersecurity, backend development, databases and Linux.
+            Enjoy problem-solving, coding, debugging and analysing technical challenges to understand 
+            how systems work and identify practical solutions. Have developed technical knowledge through
+            academic studies and hands-on experience with programming, databases, web technologies
+            and operating systems.
         </p><br>
         <p class="card-description">
-            As I approach the completion of my studies, I am currently seeking an internship or WIL opportunity
-            where I can apply my knowledge, gain practical industry experience and continue developing my technical skills.
+            Currently seeking a Work Integrated Learning (WIL) opportunity to gain practical industry 
+            experience, apply acquired Computer Science knowledge and fulfil the practical training 
+            requirement for completing my Diploma. Eager to learn, contribute to a team and continue 
+            developing professionally within the technology industry.
         </p>
     </div>
     <div class="card-grid">
         <div class="content-card">
-            <h3 class="card-title">Technology Interests</h3>
-            <p class="card-description">Interested in exploring different areas of technology, including software development, cybersecurity, databases, networking, backend systems and emerging technologies.</p>
-        </div>
-        <div class="content-card">
-            <h3 class="card-title">Current Goal</h3>
-            <p class="card-description">Currently seeking an internship / WIL opportunity in the technology industry where I can apply my Computer Science knowledge, gain experience and continue learning.</p>
+            <h3 class="card-title">Key Areas of Knowledge</h3>
+            <div class="expertise-list">
+                <span class="tag">Java Programming</span>
+                <span class="tag">Object-Oriented Programming</span>
+                <span class="tag">Advanced Object-Oriented Programming</span>
+                <span class="tag">HTML & CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL & PostgreSQL</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Java EE</span>
+                <span class="tag">Android Development</span>
+                <span class="tag">Cybersecurity Fundamentals</span>
+            </div>
         </div>
     </div>
 `;
@@ -190,16 +202,13 @@ document.getElementById("about-content").innerHTML = `
 document.getElementById("education-content").innerHTML = `
     <div class="timeline">
         <div class="timeline-card">
-            <h3 class="card-title">Diploma in Computer Science</h3>
-            <p><strong>Tshwane University of Technology</strong></p>
-            <p class="card-description">Final-year student developing knowledge and practical skills in programming, databases, software engineering, web technologies, computer systems and other areas of Computer Science.</p>
+            <h3 class="card-title">Diploma in Computer Science (In Progress) — Tshwane University of Technology (TUT)</h3>
+            <p class="card-description">Final-year student | <span style="color:rgb(233, 29, 29)" >WIL outstanding</span></p>
             <div><span class="tag">Computer Science</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">Linux</span></div>
         </div>
         <div class="timeline-card">
-            <h3 class="card-title">National Senior Certificate</h3>
-            <p><strong>Ngwanakwena Secondary School</strong></p>
-            <p class="card-description">Completed National Senior Certificate in 2023.</p>
-            <span class="tag">2023</span>
+            <h3 class="card-title">National Senior Certificate (NSC) — Ngwanakwena Senior Secondary School </h3>
+            <span class="tag">Completed NSC in 2023</span>
         </div>
     </div>
 `;
@@ -212,10 +221,17 @@ const skills = [
     { name: "Kotlin", category: "Programming", level: "Studied and practised" },
     { name: "HTML", category: "Web Development", level: "Studied and practised" },
     { name: "CSS", category: "Web Development", level: "Studied and practised" },
-    { name: "JavaScript", category: "Web Development", level: "Currently learning" },
+    { name: "JavaScript", category: "Web Development", level: "Studied and practised" },
     { name: "SQL", category: "Databases", level: "Studied and practised" },
     { name: "PostgreSQL", category: "Databases", level: "Practised in projects" },
-    { name: "Linux", category: "Operating Systems", level: "Studied and practised" }
+    { name: "Linux", category: "Operating Systems", level: "Studied and practised" },
+    { name: "Git", category: "Tools", level: "Used for version control" },
+    { name: "GitHub", category: "Tools", level: "Used for repository management" },
+    { name: "Notepad++", category: "Tools", level: "Used for code editing" },
+    { name: "Android Studio", category: "Tools", level: "Used for Android development" },
+    { name: "Visual Studio Code", category: "Tools", level: "Used for code editing" },
+    { name: "NetBeans", category: "Tools", level: "Used for Java development" }
+    
 ];
 const skillCategories = ["All", "Programming", "Web Development", "Databases", "Operating Systems", "Tools"];
 
@@ -249,25 +265,29 @@ const projectFilters = document.getElementById("project-filters");
 const projects = [
     {
         name: "SpazaHub", category: "Java Development",
-        description: "A Java EE web application designed to support tuck shop management.",
-        technologies: ["Java", "JSP", "Servlets", "EJB", "JPA", "PostgreSQL"],
-        details: "Developed a web-based management system with user authentication, roles, product and category management, sales processing, stock management and reports.",
-        image: "images/spazahub.jpeg"
+        description: "A Java EE web-based tuck shop management system developed using NetBeans.",
+        technologies: ["Java", "Java EE", "EJB", "JPA", "JSP", "Servlets", "PostgreSQL"],
+        details: "Developed a web-based management system with user authentication, roles, product and "+
+                 "category management, sales processing, stock management and reports. "+
+                 "The web application integrates a separate Enterprise JavaBeans (EJB) module for business logic and data access.",
+        image: "images/spazahub.jpeg",
+        github: "https://github.com/parsons-radingoanis/SpazaHub"
     },
     {
-        name: "TuckShopApp", category: "Java Development",
+        name: "Old Lady's Tuck Shop", category: "Java Development",
         description: "A standalone Java console application for a tuck shop.",
-        technologies: ["Java"],
-        details: "A console-based application developed to practise Java programming and basic shop transaction functionality, including displaying a till slip.",
-        image: "images/tuckshop.png"
-    },
+        technologies: ["Java", "Arrays", "Methods", "Loops"],
+        details: "A console-based application that simulates tuck shop transactions, including product selection, stock availability checks, payment processing, change calculation, customer receipts and shop summaries.",
+        image: "images/tuckshop.jpeg",
+        github: "https://github.com/parsons-radingoanis/old-ladys-tuck-shop"
+    }/*,
     {
         name: "Linux Practical Work", category: "Linux",
         description: "Practical Linux exercises involving system administration and command-line operations.",
         technologies: ["Linux", "Bash", "Permissions", "Networking"],
         details: "Worked with Linux commands, users and groups, file permissions, access control, system information, directory management and backup operations.",
         image: "images/linux-project.png"
-    }
+    }*/
 ];
 const projectCategories = ["All", "Java Development", "Linux"];
 
@@ -284,7 +304,13 @@ function displayProjects(category) {
             <h3 class="card-title">${project.name}</h3>
             <p>${project.description}</p>
             <div>${project.technologies.map(function (technology) { return `<span class="tag">${technology}</span>`; }).join("")}</div>
-            <button class="details-btn">View Details</button>
+            <div class="project-actions">
+                <button class="details-btn">View Details</button>
+                ${
+                    project.github ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer" 
+                    class="github-btn"><i class="fab fa-github"></i> View on GitHub</a>` : ""
+                }
+            </div>
             <div class="project-details" hidden>${project.details}</div>
         `;
         const detailsButton = card.querySelector(".details-btn");
@@ -311,30 +337,16 @@ projectCategories.forEach(function (category, index) {
 });
 displayProjects("All");
 
-// REPORTS
-const reports = [
-    { title: "Linux Practical Exercises", category: "Operating Systems", description: "Documentation of practical Linux exercises covering users, groups, file permissions, system information and backup operations.", status: "Practical coursework" },
-    { title: "Database Programming", category: "Databases", description: "Academic work involving database concepts, SQL queries and database programming.", status: "Academic coursework" },
-    { title: "Software Engineering", category: "Software Development", description: "Coursework exploring software engineering concepts and the software development process.", status: "Academic coursework" }
-];
-document.getElementById("reports-content").innerHTML = reports.map(function (report) {
-    return `<div class="content-card"><h3 class="card-title">${report.title}</h3><p class="card-description">${report.description}</p><div><span class="tag">${report.category}</span><span class="tag">${report.status}</span></div></div>`;
-}).join("");
-
 // EXPERIENCE
 document.getElementById("experience-content").innerHTML = `
     <div class="timeline">
         <div class="timeline-card">
-            <h3 class="card-title">Residence Recruitment Assistance</h3>
-            <p><strong>Administrative and Student Support</strong></p>
-            <p class="card-description">Assisted students with enquiries and provided administrative support during residence recruitment.</p>
-            <ul>
-                <li>Assisted students with recruitment-related matters.</li>
-                <li>Captured and updated information.</li>
-                <li>Performed administrative duties.</li>
-                <li>Organised and maintained documents.</li>
+            <h3 class="card-title">Student Residence Recruitment Assistance</h3>
+                <li>Assisted students with recruitment-related enquiries and administrative processes.</li>
+                <li>Captured and maintained student information; organised documents and 
+                supported administrative activities.</li>
             </ul>
-            <span class="tag">Administrative Support</span><span class="tag">Communication</span><span class="tag">Organisation</span>
+            <span class="tag">Work Experience</span><span class="tag">Administrative Support</span><span class="tag">Communication</span><span class="tag">Organisation</span>
         </div>
     </div>
 `;
@@ -343,6 +355,7 @@ document.getElementById("experience-content").innerHTML = `
 const journey = [
     { title: "Computer Science Foundations", description: "Started developing a foundation in Computer Science, programming concepts and problem-solving.", technologies: ["Computer Science", "Programming"] },
     { title: "Object-Oriented Programming", description: "Studied Java programming, object-oriented concepts and practical application development.", technologies: ["Java", "OOP"] },
+    { title: "Advanced Object-Oriented Programming", description: "Studied Java programming, advanced object-oriented concepts and practical application development.", technologies: ["Java", "AOP"] },
     { title: "Databases", description: "Developed knowledge of database design, SQL and working with relational databases.", technologies: ["SQL", "PostgreSQL"] },
     { title: "Web and Application Development", description: "Explored web application development and Android development using Kotlin and Jetpack Compose.", technologies: ["HTML", "CSS", "JavaScript", "Kotlin"] },
     { title: "Linux and Technical Practice", description: "Practised Linux commands, user and group management, file permissions and system administration tasks.", technologies: ["Linux", "Bash", "Networking"] },
@@ -397,6 +410,13 @@ document.getElementById("contact-content").innerHTML = `
         }).join("")}
     </div>
 `;
+
+// UPDATE QUICK STATS
+document.getElementById("stat-education").textContent =
+    String(1).padStart(2, "0");
+
+document.getElementById("stat-projects").textContent =
+    String(projects.length).padStart(2, "0");
 
 // Start with home selected
 navigateToSection("home");

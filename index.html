@@ -32,7 +32,6 @@
                 <button class="file-item" data-section="skills"><span class="file-icon json">{ }</span> skills.json</button>
                 <div class="folder-row"><span class="chevron">⌄</span><span class="folder-icon">▰</span> projects</div>
                 <button class="file-item nested" data-section="projects"><span class="file-icon html">▤</span> index.html</button>
-                <button class="file-item" data-section="reports"><span class="file-icon md">M↓</span> reports.md</button>
                 <button class="file-item" data-section="experience"><span class="file-icon html">▤</span> experience.html</button>
                 <button class="file-item" data-section="journey"><span class="file-icon md">M↓</span> journey.md</button>
                 <button class="file-item" data-section="contact"><span class="file-icon html">▤</span> contact.html</button>
@@ -48,7 +47,7 @@
                 <button id="mobile-explorer" class="icon-button mobile-only" aria-label="Open explorer">☰</button>
                 <div class="breadcrumbs"><span>portfolio</span><span class="crumb-separator">›</span><strong id="breadcrumb-file">index.html</strong></div>
                 <div class="topbar-actions">
-                    <button id="command-open" class="command-trigger" aria-label="Open command palette"><span>⌕</span> Search files and commands... <kbd>Ctrl K</kbd></button>
+                    <button id="command-open" class="command-trigger" aria-label="Open command palette"><span>⌕</span> Search files and commands... <kbd>Ctrl + K</kbd></button>
                 </div>
             </header>
 
@@ -63,15 +62,25 @@
                     <div class="section-kicker"><span class="syntax-purple">const</span> <span class="syntax-blue">welcome</span> <span class="syntax-muted">=</span> <span class="syntax-green">"Hello, World!"</span><span class="syntax-muted">;</span></div>
                     <div class="hero-layout">
                         <div class="hero-copy">
-                            <p class="eyebrow">HELLO, WORLD! I'M</p>
                             <h1>Parsons <span>Radingoanis</span></h1>
                             <h2>Final-Year Computer Science Student</h2>
-                            <p class="hero-description">Technology Enthusiast exploring cybersecurity, software development, backend systems, Linux and more.</p>
-                            <p class="hero-support">I enjoy problem-solving, analysing technical challenges and building practical solutions through Computer Science. Always learning and discovering new possibilities.</p>
-                            <div class="availability"><span class="status-dot"></span> Currently seeking Internship / Work Integrated Learning (WIL)</div>
+                            <p class="hero-description">
+                                Technology Enthusiast with an interest in cybersecurity, software development, backend systems, databases and 
+                                Linux. I enjoy exploring technology, solving problems, analysing technical challenges and developing 
+                                practical solutions.
+                            </p>
+                            <p class="hero-support">
+                                I am continuously expanding my technical knowledge through academic projects and practical learning. 
+                                I am currently seeking an internship or Work Integrated Learning (WIL) opportunity where I can apply my knowledge, 
+                                gain industry experience and contribute while developing my skills.
+                            </p>
+                            <div class="availability"><span class="status-dot"></span> Currently seeking Work Integrated Learning (WIL) / Internship</div>
                             <div class="hero-actions">
                                 <a class="primary-button" href="#projects" data-go="projects">Explore Projects <span>↗</span></a>
                                 <a class="secondary-button" href="#about" data-go="about">About Me</a>
+                                <a class="primary-button" href="documents/resume.pdf" download="Parsons_Radingoanis_Resume.pdf">
+                                    Download Resume <span>↗</span>
+                                </a>
                             </div>
                         </div>
                         <div class="code-window">
@@ -92,9 +101,20 @@
                         </div>
                     </div>
                     <div class="quick-stats">
-                        <div><strong>01</strong><span>Computer Science</span></div>
-                        <div><strong>08+</strong><span>Technical skills</span></div>
-                        <div><strong>03</strong><span>Featured projects</span></div>
+                        <div>
+                            <strong id="stat-education">00</strong>
+                            <span>Qualification</span>
+                        </div>
+
+                        <div>
+                            <strong id="stat-skills">10+</strong>
+                            <span>Technical skills</span>
+                        </div>
+
+                        <div>
+                            <strong id="stat-projects">00</strong>
+                            <span>Projects</span>
+                        </div>
                     </div>
                 </section>
 
@@ -113,14 +133,16 @@
                     <div id="skills-content"></div>
                 </section>
                 <section id="projects" class="page-section">
-                    <div class="section-heading"><span class="heading-icon">▰</span><div><p class="section-path">portfolio / projects / index.html</p><h2>Projects & Practical Work</h2></div></div>
+                    <div class="section-heading">
+                        <span class="heading-icon">▰</span>
+                        <div>
+                            <p class="section-path">portfolio / projects / index.html</p>
+                            <h2>Projects & Practical Work</h2>
+                        </div>
+                    </div>
                     <p class="section-intro">Selected academic and personal work demonstrating my practical learning.</p>
                     <div id="project-filters" class="filter-container"></div>
                     <div id="projects-content" class="project-grid"></div>
-                </section>
-                <section id="reports" class="page-section">
-                    <div class="section-heading"><span class="heading-icon md">M↓</span><div><p class="section-path">portfolio / reports.md</p><h2>Reports & Documentation</h2></div></div>
-                    <div id="reports-content"></div>
                 </section>
                 <section id="experience" class="page-section">
                     <div class="section-heading"><span class="heading-icon">▤</span><div><p class="section-path">portfolio / experience.html</p><h2>Experience</h2></div></div>
