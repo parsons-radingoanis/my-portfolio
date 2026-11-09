@@ -189,7 +189,7 @@ document.getElementById("about-content").innerHTML = `
                 <span class="tag">Advanced Object-Oriented Programming</span>
                 <span class="tag">HTML & CSS</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">SQL & PostgreSQL</span>
+                <span class="tag">SQL, MySQL & PostgreSQL</span>
                 <span class="tag">Linux</span>
                 <span class="tag">Java EE</span>
                 <span class="tag">Android Development</span>
@@ -204,7 +204,7 @@ document.getElementById("education-content").innerHTML = `
     <div class="timeline">
         <div class="timeline-card">
             <h3 class="card-title">Diploma in Computer Science (In Progress) — Tshwane University of Technology (TUT)</h3>
-            <p class="card-description">Final-year student | <span style="color:rgb(233, 29, 29)" >WIL outstanding</span></p>
+            <p class="card-description">Final-year student | <span style="color:rgb(233, 29, 29); text-weight: bold;" >WIL outstanding</span></p>
             <div><span class="tag">Computer Science</span><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">Linux</span></div>
         </div>
         <div class="timeline-card">
@@ -224,6 +224,7 @@ const skills = [
     { name: "CSS", category: "Web Development", level: "Studied and practised" },
     { name: "JavaScript", category: "Web Development", level: "Studied and practised" },
     { name: "SQL", category: "Databases", level: "Studied and practised" },
+    { name: "MySQL", category: "Databases", level: "Studied and practised" },
     { name: "PostgreSQL", category: "Databases", level: "Practised in projects" },
     { name: "Linux", category: "Operating Systems", level: "Studied and practised" },
     { name: "Git", category: "Tools", level: "Used for version control" },
