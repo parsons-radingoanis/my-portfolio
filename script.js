@@ -289,7 +289,7 @@ const projects = [
         details: "An interactive personal portfolio website showcasing my Computer Science background, technical skills, projects and learning journey.",
         image: "images/portfolio.png",
         github: "https://github.com/parsons-radingoanis/my-portfolio.git",
-        website: "https://parsons-radingoanis.github.io/my-portfolio"
+        website: "https://parsons-radingoanis.github.io/my-portfolio/"
     }/*,
     {
         name: "Linux Practical Work", category: "Linux",
