@@ -172,6 +172,7 @@ document.getElementById("about-content").innerHTML = `
             academic studies and hands-on experience with programming, databases, web technologies
             and operating systems.
         </p><br>
+        <p class="card-description">I am continuously expanding my technical knowledge through academic projects and practical learning.</p><br>
         <p class="card-description">
             Currently seeking a Work Integrated Learning (WIL) opportunity to gain practical industry 
             experience, apply acquired Computer Science knowledge and fulfil the practical training 
