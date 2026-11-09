@@ -281,6 +281,15 @@ const projects = [
         details: "A console-based application that simulates tuck shop transactions, including product selection, stock availability checks, payment processing, change calculation, customer receipts and shop summaries.",
         image: "images/tuckshop.jpeg",
         github: "https://github.com/parsons-radingoanis/old-ladys-tuck-shop"
+    },
+    {
+        name: "Personal Portfolio Website", category: "Web Development",
+        description: "A standalone Java console application for a tuck shop.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        details: "An interactive personal portfolio website showcasing my Computer Science background, technical skills, projects and learning journey.",
+        image: "images/portfolio.png",
+        github: "https://github.com/parsons-radingoanis/my-portfolio.git",
+        website: "https://parsons-radingoanis.github.io/my-portfolio"
     }/*,
     {
         name: "Linux Practical Work", category: "Linux",
@@ -310,6 +319,10 @@ function displayProjects(category) {
                 ${
                     project.github ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer" 
                     class="github-btn"><i class="fab fa-github"></i> View on GitHub</a>` : ""
+                }
+                ${
+                    project.website ? `<a href="${project.website}" target="_blank" rel="noopener noreferrer" 
+                    class="github-btn"><i class="fas fa-globe"></i> View Website</a>` : ""
                 }
             </div>
             <div class="project-details" hidden>${project.details}</div>
