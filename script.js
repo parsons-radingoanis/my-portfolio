@@ -189,7 +189,7 @@ document.getElementById("about-content").innerHTML = `
                 <span class="tag">Advanced Object-Oriented Programming</span>
                 <span class="tag">HTML & CSS</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">SQL, MySQL & PostgreSQL</span>
+                <span class="tag">SQL, MySQL, relational databases & PostgreSQL</span>
                 <span class="tag">Linux</span>
                 <span class="tag">Java EE</span>
                 <span class="tag">Android Development</span>
@@ -225,6 +225,7 @@ const skills = [
     { name: "JavaScript", category: "Web Development", level: "Studied and practised" },
     { name: "SQL", category: "Databases", level: "Studied and practised" },
     { name: "MySQL", category: "Databases", level: "Studied and practised" },
+    { name: "relational databases", category: "Databases", level: "Studied and practised" },
     { name: "PostgreSQL", category: "Databases", level: "Practised in projects" },
     { name: "Linux", category: "Operating Systems", level: "Studied and practised" },
     { name: "Git", category: "Tools", level: "Used for version control" },
@@ -371,7 +372,7 @@ const journey = [
     { title: "Computer Science Foundations", description: "Started developing a foundation in Computer Science, programming concepts and problem-solving.", technologies: ["Computer Science", "Programming"] },
     { title: "Object-Oriented Programming", description: "Studied Java programming, object-oriented concepts and practical application development.", technologies: ["Java", "OOP"] },
     { title: "Advanced Object-Oriented Programming", description: "Studied Java programming, advanced object-oriented concepts and practical application development.", technologies: ["Java", "AOP"] },
-    { title: "Databases", description: "Developed knowledge of database design, SQL and working with relational databases.", technologies: ["SQL", "MySQL", "PostgreSQL"] },
+    { title: "Databases", description: "Developed knowledge of database design, SQL and working with relational databases.", technologies: ["SQL", "MySQL", "relational databases", "PostgreSQL"] },
     { title: "Web and Application Development", description: "Explored web application development and Android development using Kotlin and Jetpack Compose.", technologies: ["HTML", "CSS", "JavaScript", "Kotlin"] },
     { title: "Linux and Technical Practice", description: "Practised Linux commands, user and group management, file permissions and system administration tasks.", technologies: ["Linux", "Bash", "Networking"] },
     { title: "Continuing to Explore Technology", description: "Continuing to develop technical knowledge while seeking an internship or WIL opportunity to gain industry experience.", technologies: ["Learning", "Practical Experience"] }
