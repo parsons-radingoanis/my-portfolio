@@ -371,7 +371,7 @@ const journey = [
     { title: "Computer Science Foundations", description: "Started developing a foundation in Computer Science, programming concepts and problem-solving.", technologies: ["Computer Science", "Programming"] },
     { title: "Object-Oriented Programming", description: "Studied Java programming, object-oriented concepts and practical application development.", technologies: ["Java", "OOP"] },
     { title: "Advanced Object-Oriented Programming", description: "Studied Java programming, advanced object-oriented concepts and practical application development.", technologies: ["Java", "AOP"] },
-    { title: "Databases", description: "Developed knowledge of database design, SQL and working with relational databases.", technologies: ["SQL", "PostgreSQL"] },
+    { title: "Databases", description: "Developed knowledge of database design, SQL and working with relational databases.", technologies: ["SQL", "MySQL", "PostgreSQL"] },
     { title: "Web and Application Development", description: "Explored web application development and Android development using Kotlin and Jetpack Compose.", technologies: ["HTML", "CSS", "JavaScript", "Kotlin"] },
     { title: "Linux and Technical Practice", description: "Practised Linux commands, user and group management, file permissions and system administration tasks.", technologies: ["Linux", "Bash", "Networking"] },
     { title: "Continuing to Explore Technology", description: "Continuing to develop technical knowledge while seeking an internship or WIL opportunity to gain industry experience.", technologies: ["Learning", "Practical Experience"] }
